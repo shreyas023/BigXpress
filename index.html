@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigExpress | Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="header" id="home">
+        <div class="navbar">
+            <div class="col hero">
+            <h2 class="title" style="color: #000;">Big</h2><h2 class="title" style="color: red;">Xpress</h2>
+            </div>
+            <div class="col">
+                <ul class="nav-items">
+                    <a href="#home"><li class="nav-item">Home</li></a>
+                    <a href="#service"><li class="nav-item">Services</li></a>
+                    <a href="#about"><li class="nav-item">About Us</li></a>
+                    <a href="#contact"><li class="nav-item">Contact</li></a>
+                </ul>
+            </div>
+            <div class="col">
+                <button class="btn">
+                    Login
+                </button>
+                <button class="btn" style="background: transparent; color: black;">
+                    Sign Up
+                </button>
+            </div>
+            <div class="menu-btn">
+                <button class="dropdown-btn" onclick="displayMenu()">≡</button>	
+            </div>
+        </div>
+        <div class="dropdown" id="menu">
+            <a href="#home"><li class="nav-item" onclick="displayMenu()">Home</li></a>
+            <a href="#service"><li class="nav-item" onclick="displayMenu()">Services</li></a>
+            <a href="#about"><li class="nav-item" onclick="displayMenu()">About Us</li></a>
+            <a href="#contact"><li class="nav-item" onclick="displayMenu()">Contact</li></a>
+            <button class="btn" onclick="displayMenu()">
+                Login
+            </button>
+            <button class="btn" style="background: white; color: black;" onclick="displayMenu()">
+                Sign Up
+            </button>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Experience the difference with
+                <h2 class="title" style="color: #6D6D6D; margin: 0px 0px;">Big</h2>
+                <h2 class="title" style="color: red; margin: 0px 0px;">Xpress</h2> 
+                where logistics meets excellence.
+            </div>
+            <div class="col">
+                <form class="form" id="form" onsubmit="submitForm()">
+                    <h3>For logistic services</h3>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Pickup" required>
+                    <input type="text" placeholder="Drop" required>
+                    <button type="submit"  style="border-radius: 15px; background: #1164A0; cursor: pointer;">
+                        <h3>Get Quote</h3>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="row" id="service">Services</div>
+        <div class="row">
+            <div class="col2">
+                <h3>Household Moving</h3>
+                <p>Transporting household goods and personal belongings from one location to another.</p>
+            </div>
+            <div class="col2">
+                <h3>Expedited shipping</h3>
+                <p>A shipping service that prioritizes fast delivery times for time-sensitive shipments.</p>
+            </div>
+            <div class="col2">
+                <h3>Warehouse and distribution</h3>
+                <p>A logistics service that involves the storage, handling, and distribution of products and inventory for businesses.</p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div id="about">About Us</div>
+        <div class="description">
+            <p>Welcome to Bigxpress! We are a premier trucking company that provides reliable, efficient, 
+                and affordable transportation services to customers across the country. Our commitment to 
+                excellence and customer satisfaction has made us a trusted partner for businesses of all sizes.
+            </p>
+            <p>Bigxpress, we are proud to have a team of seasoned professionals who bring a wealth of knowledge 
+                and experience to every project. From our skilled drivers and dispatchers to our logistics and 
+                customer support staff, we are dedicated to providing the highest level of service and expertise 
+                to our customers.
+            </p>
+        </div>
+    </div>
+    <div class="contact">
+        <div id="contact">
+            Contact
+        </div>
+        <div class="info">
+            <div class="info1">
+                <div>
+                    Contact us today to request a quote or schedule a shipment.
+                </div>
+                <div>
+                    <p>Phone: 657-849-5263,</p>   
+                    <p>Email: info@bigxpress.com,</p>         
+                    <p>Address: 123 Main Street, Anytown USA.</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="info1">
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="col hero">
+                <h2 class="title" style="color: #000;">Big</h2><h2 class="title" style="color: rgba(255, 0, 0, 0.71);">Xpress</h2>
+            </div>
+            <div class="col">
+                Copyright 2023 @ BigXpress
+            </div>
+            <div class="icon">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram insta" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="scroller">
+        <button id="scrollbtn" onclick="topFunction()">&#9650;</button>
+    </div>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
